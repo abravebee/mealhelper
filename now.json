@@ -3,7 +3,7 @@
     "version": 2,
     "alias": "eat-well-app.now.sh",
     "builds": [
-      { "src": "front-end/package.json", 
+      { "src": "Front-end/mealhelper/package.json", 
         "use": "@now/static-build",
         "config": { "distDir": "build" } 
       }
