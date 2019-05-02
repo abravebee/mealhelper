@@ -133,9 +133,9 @@ class Meals extends Component {
       <div className="meals-container">
         <div className="meal-box-new">
           <h1 className="new-meal-text-new">Create A New Meal</h1>
-          <a href="/homepage/getstarted" style={{ textDecoration: "none" }}>
+          {/* <a href="/homepage/getstarted" style={{ textDecoration: "none" }}>
             <p className="new-meal-text-new-help">Need Help?</p>
-          </a>
+          </a> */}
           <form>
             <Alert
               isOpen={this.state.alert}

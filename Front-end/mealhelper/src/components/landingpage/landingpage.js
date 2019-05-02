@@ -167,9 +167,9 @@ class Landingpage extends Component {
                   nutritional plan that works for YOU!
                 </p>
                 <div className="mini-cta">
-                  <Link to="/signup" style={{ textDecoration: "none" }}>
+                  {/* <Link to="/signup" style={{ textDecoration: "none" }}>
                     <button className="buttons-lp">Get Started</button>
-                  </Link>
+                  </Link> */}
                 </div>
               </div>
             </div>

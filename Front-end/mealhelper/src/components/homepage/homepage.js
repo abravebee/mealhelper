@@ -60,9 +60,9 @@ class HomePage extends Component {
             token={this.onToken}
             zipCode
           />
-          <Link to="/homepage/getstarted" style={{ textDecoration: "none" }}>
+          {/* <Link to="/homepage/getstarted" style={{ textDecoration: "none" }}>
             <div className="user-profile-card-getstarted">Get Started!</div>
-          </Link>
+          </Link> */}
           <Link to="/homepage/settings" style={{ textDecoration: "none" }}>
             <div className="user-profile-card-settings">Settings</div>
           </Link>
