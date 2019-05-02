@@ -1,4 +1,4 @@
-.mealbook-container {
+.recipebook-container-kcb {
     margin: 100px auto 0;
     width: 600px;
     background: #242424;
@@ -6,16 +6,16 @@
     justify-self: center;
   }
   
-  .mealbook-heading {
+  .recipebook-heading-kcb {
     border-bottom: 1px solid #2f9dfe;
   }
   
-  .mealbook-heading h1 {
+  .recipebook-heading-kcb h1 {
     padding: 10px 0;
     color: white;
   }
   
-  .mealbook-card {
+  .recipebook-card-kcb {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly; /* adjust when nutrs work */
@@ -26,14 +26,8 @@
     margin-top: 5px;
     color: white;
   }
-  
-  .mealbook-card .empty {
-    justify-content: center;
-    width: 100%;
-    margin: 0;
-  }
-  
-  .mealbook-text {
+    
+  .recipebook-text-kcb {
     width: 350px;
     height: 100%;
     display: flex;
@@ -42,92 +36,28 @@
     align-items: center;
   }
   
-  .mealbook-card-sec1 {
+  .recipebook-card-sec1-kcb {
     display: flex;
     justify-content: space-evenly;
     width: 100%;
     margin-left: 5px;
-  
     /* border: 1px solid lime; */
   }
   
-  .mealbook-card-sec2 {
+  .recipebook-card-sec2-kcb {
     display: flex;
     flex-direction: column;
     /* border: 1px solid blue; */
     /* border-top: 1px solid #2f9dfe; uncomment when nutrs work*/ 
   }
   
-  .mealbook-date {
-    width: 100px;
-    /* border: 1px solid red; */
-  }
-  
-  .mealbook-serve {
+  .recipebook-calories-kcb {
     width: 100%;
     /* border: 1px solid orange; */
   }
-  .mealbook-name {
+
+  .recipebook-name-kcb {
     width: 200px;
     font-size: 18px;
     /* border: 1px solid yellow; */
-  }
-  .mealbook-time {
-    width: 80px;
-    /* border: 1px solid green; */
-  }
-  
-  .mealbook-exp {
-    display: flex;
-    flex-direction: column;
-    width: 100px; 
-  }
-  
-  .mealbook-buttons {
-    display: flex;
-    justify-content: space-evenly;
-    width: 100px;
-    /* border: 2px solid mediumorchid; */
-  }
-  
-  .mealbook-nutr {
-    width: 150px;
-    font-size: 13px;
-  }
-  .mealbook-nutr p {
-    margin: 0;
-  }
-  
-  .mealbook-btn-active {
-    background: #2f9dfe;
-    border: 1px solid #242424;
-  }
-  
-  .mealbook-btn-inactive {
-    background: #242424;
-    border: none;
-    border-radius: 5px;
-  }
-  
-  .mealbook-btn-inactive:hover {
-    cursor: pointer;
-  }
-  
-  .add-new-mb {
-    padding: 10px 0;
-  }
-  
-  .add-new-mb-btn {
-    background: #242424;
-    width: 200px;
-    height: 51px;
-    border: 1px solid #2f9dfe;
-    border-radius: 5px;
-    color: white;
-  }
-  
-  .add-new-mb-btn:hover {
-    color: #242424;
-    cursor: pointer;
-    background: #2f9dfe;
   }

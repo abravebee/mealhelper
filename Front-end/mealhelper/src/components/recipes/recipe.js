@@ -8,12 +8,36 @@ import { getIngredients } from "../../store/actions/ingredActions";
 // import { deleteRecipe } from "../../store/actions/recipeActions";
 
 import "./recipes.css";
+import "./recipebook.css";
+import "../alarms/myAlarms.css";
 
 class Recipe extends Component {
   render() {
     return (
-      <div className="single-recipe-plz">
-        <Link
+      <div className="recipebook-card-kcb">
+        <div className="recipebook-text-kcb"
+         onClick={() => this.props.history.push(`/recipe/${this.props.id}`)}>           
+           
+                <div className="recipebook-name-kcb">
+                    <p>{this.props.name}</p>
+
+            </div>
+        
+                <div className="recipebook-calories-kcb">
+                    <p>Calories: {this.props.calories}</p>
+                
+                </div>
+           
+                <button className="alarm-btn delete"
+                onClick={() =>
+                    this.props.deleteRecipe(
+                      this.props.id,
+                      localStorage.getItem("user_id")
+                    )
+                  }> Delete </button>
+   
+        </div>
+        {/* <Link
           className="a-tags"
           recipeID={this.props.id}
           to={`/recipe/${this.props.id}`}
@@ -37,7 +61,7 @@ class Recipe extends Component {
           className="delete-recipe"
         >
           Delete
-        </button>
+        </button> */}
       </div>
     );
   }
