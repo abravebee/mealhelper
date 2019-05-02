@@ -12,7 +12,7 @@ class Auth0Client extends Component {
       domain: "eat-well.auth0.com",
       audience: "https://eat-well.auth0.com/userinfo",
       clientID: "FaLyBFfAnk3NbVlH3Tmfoz0OdGfNaHDz",
-      redirectUri: "http://eat-well-app.now.sh/callback",
+      redirectUri: "http://eat-well-app2.now.sh/callback",
       responseType: "token id_token",
       scope: "openid email profile"
     });
