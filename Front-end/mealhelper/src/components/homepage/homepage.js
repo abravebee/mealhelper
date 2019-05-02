@@ -70,19 +70,13 @@ class HomePage extends Component {
             <div className="user-profile-card-logout">Logout</div>
           </a>
           <h1 className="user-profile-card-cta">
-            Hey, [username] let's
+            Welcome! It's time to
             <h1 className="user-profile-card-cta-logo">EatWell!</h1>
           </h1>
           <div className="user-profile-card-infobox">
             <p className="user-profile-card-infobox-date">
               Today is: <br />
               <Moment format="LLLL">{this.props.dateToFormat}</Moment>
-            </p>
-            <p className="user-profile-card-infobox-last-meal">
-              Your last meal was:
-            </p>
-            <p className="user-profile-card-infobox-next-meal">
-              Your next meal will be in:
             </p>
           </div>
           <div className="">Total Stats</div>
@@ -95,21 +89,21 @@ class HomePage extends Component {
               className="stat-divider-numbers"
               style={{ textDecoration: "none" }}
             >
-              <h3 className="stat-text">11</h3>
+              <h3 className="stat-text">{this.props.meals.length}</h3>
             </Link>
             <Link
               to="/homepage/recipes"
               className="stat-divider-numbers"
               style={{ textDecoration: "none" }}
             >
-              <h3 className="stat-text">9</h3>
+              <h3 className="stat-text">{this.props.recipes.length}</h3>
             </Link>
             <Link
               to="/homepage/alarms"
               className="stat-divider-numbers"
               style={{ textDecoration: "none" }}
             >
-              <h3 className="stat-text">6</h3>
+              <h3 className="stat-text">{this.props.alarms.length}</h3>
             </Link>
           </div>
           <div
@@ -153,7 +147,9 @@ class HomePage extends Component {
 
 const mapStateToProps = state => ({
   user: state.userReducer.user,
-  meals: state.mealsReducer.meals
+  meals: state.mealsReducer.meals,
+  recipes: state.recipesReducer.recipes,
+  alarms: state.alarmsReducer.alarms
 });
 
 export default connect(

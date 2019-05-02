@@ -35,33 +35,7 @@ class Recipe extends Component {
                       localStorage.getItem("user_id")
                     )
                   }> Delete </button>
-   
         </div>
-        {/* <Link
-          className="a-tags"
-          recipeID={this.props.id}
-          to={`/recipe/${this.props.id}`}
-        >
-          <div className="single-recipe-view">
-            <div className="recipe-name">
-              <h1>{this.props.name}</h1>
-            </div>
-            <div className="calories-display">
-              Calories: {this.props.calories}
-            </div>
-          </div>
-        </Link>
-        <button
-          onClick={() =>
-            this.props.deleteRecipe(
-              this.props.id,
-              localStorage.getItem("user_id")
-            )
-          }
-          className="delete-recipe"
-        >
-          Delete
-        </button> */}
       </div>
     );
   }
