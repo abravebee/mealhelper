@@ -9,10 +9,10 @@ class Auth0Client extends Component {
   constructor(props) {
     super(props);
     this.auth0 = new auth0.WebAuth({
-      domain: "meal-helper.auth0.com",
-      audience: "https://meal-helper.auth0.com/userinfo",
-      clientID: "8tgiI3YtUYxGba-t1sgTpV9xJKyMLgaW",
-      redirectUri: "https://lambdamealhelper.netlify.com/callback",
+      domain: "eat-well.auth0.com",
+      audience: "https://eat-well.auth0.com/userinfo",
+      clientID: "FaLyBFfAnk3NbVlH3Tmfoz0OdGfNaHDz",
+      redirectUri: "http://localhost:3000/callback",
       responseType: "token id_token",
       scope: "openid email profile"
     });

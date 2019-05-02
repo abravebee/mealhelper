@@ -140,7 +140,7 @@ class Landingpage extends Component {
                 <p>A N A L Y Z E</p>
               </div>
               <div className="card-body-text">
-                <p>
+                <p><i><b>Coming Soon:</b></i><br />
                   Export an overview of your meal journal to show to a health
                   professional, or view your history to pick up clues yourself!
                 </p>
@@ -255,7 +255,7 @@ class Landingpage extends Component {
                   <div className="team-container">
                     <h2>Keith Haag</h2>
                     <p className="title">Project Manager</p>
-                    <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                    
                     <a href="https://github.com/kkhaag">
                       <img
                         src={Github}
@@ -294,7 +294,7 @@ class Landingpage extends Component {
                   <div className="team-container">
                     <h2>Simon Elhøj Steinmejer</h2>
                     <p className="title">iOS Developer</p>
-                    <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                    
                     <a href="https://github.com/elhoej">
                       <img
                         src={Github}
@@ -333,7 +333,7 @@ class Landingpage extends Component {
                   <div className="team-container">
                     <h2>Stefano De Micheli</h2>
                     <p className="title">iOS Developer</p>
-                    <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                    
                     <a href="https://github.com/stdemicheli">
                       <img
                         src={Github}
@@ -372,7 +372,7 @@ class Landingpage extends Component {
                   <div className="team-container">
                     <h2>Casey Baker</h2>
                     <p className="title">Web Developer</p>
-                    <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                    
                     <a href="https://github.com/abravebee">
                       <img
                         src={Github}
@@ -411,7 +411,7 @@ class Landingpage extends Component {
                   <div className="team-container">
                     <h2>Joseph Bradley</h2>
                     <p className="title">Web Developer</p>
-                    <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                    
                     <a href="https://github.com/jmbradley">
                       <img
                         src={Github}
@@ -449,8 +449,8 @@ class Landingpage extends Component {
                   />
                   <div className="team-container">
                     <h2>Patrick Thompson</h2>
-                    <p className="title">Web Devloper</p>
-                    <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                    <p className="title">Web Developer</p>
+                    
                     <a href="https://www.github.com/PatrickTheCodeGuy">
                       <img
                         src={Github}

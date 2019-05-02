@@ -13,7 +13,7 @@ class Callback extends Component {
     const user = { email };
     this.props.loginAuthUser(user);
     console.log(this.props);
-    this.props.history.push("/homepage");
+    this.props.history.replace("/homepage");
   }
 
   render() {

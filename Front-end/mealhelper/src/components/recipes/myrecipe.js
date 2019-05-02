@@ -65,9 +65,11 @@ class MyRecipes extends Component {
   };
   render() {
     return (
-      <div className="recipe-div-container">
-        <div className="recipe-container">
-          <div className="recipe-book">
+      <div className="recipebook-full-width-kcb">
+        <div className="recipebook-container-kcb">
+          <div className="recipebook-heading-kcb">
+          <h1>Recipes</h1>
+          </div>
             {this.state.list.map(item => (
               <Recipe
                 deleteRecipe={this.deleteRecipe}
@@ -81,7 +83,7 @@ class MyRecipes extends Component {
             ))}
           </div>
         </div>
-      </div>
+
     );
   }
 }
