@@ -1,21 +1,10 @@
 {
-    "name": "eat-well-app",
     "version": 2,
-    "alias": "eat-well.now.sh",
+    "name": "eat-well-app",
     "builds": [
-      { "src": "Front-end/mealhelper/package.json", 
-        "use": "@now/static-build",
-        "config": { "distDir": "build" } 
-      }
+        { "src": "Front-end/mealhelper/package.json", "use": "@now/static-build", "config": { "distDir": "build" } }
     ],
     "routes": [
-      {
-        "src": "/(.*)",
-        "dest": "/front-end/$1"
-      }
-    ],
-    "github": {
-      "enabled": true
-    }
-  }
-  
+        { "src": "/(.*)", "headers": {"cache-control": "s-maxage=0"}, "dest": "/index.html" }
+    ]
+}
