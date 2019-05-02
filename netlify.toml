@@ -1,7 +1,0 @@
-[build]
-base = "Front-end/mealhelper/"
-
-[[redirects]]
- from = "/*"
- to = "/index.html"
- status = 200
