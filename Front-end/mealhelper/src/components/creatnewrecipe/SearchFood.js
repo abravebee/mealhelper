@@ -233,7 +233,7 @@ class SearchFood extends Component {
     );
     console.log("Ingredients promise is:" + data);
 
-    this.props.history.push("/homepage");
+    this.props.history.push("/homepage/recipes/myrecipes");
   }
 
   render() {
